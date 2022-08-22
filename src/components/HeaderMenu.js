@@ -15,7 +15,6 @@ function HeaderMenu() {
   };
 
   return (
-    //<div className="menu-links">
     <div className={!val1.vis ? 'menu-links' : 'hide'}>
       <a
         href=""
@@ -35,6 +34,7 @@ function HeaderMenu() {
         href=""
         onClick={onclick}
         className={click === 'Discover' ? 'entered' : 'left'}
+        id="last"
       >
         Discover
       </a>

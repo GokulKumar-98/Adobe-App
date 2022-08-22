@@ -17,6 +17,7 @@
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: 16px 48%;
+  padding-left: 10px;
 }
 
 .wide {
@@ -43,9 +44,12 @@
   -o-transition: width 0.3s 0s ease-in-out;
   transition: width 0.3s 0s ease-in-out;
 }
-.sIcon {
+/* .sIcon {
   padding-left: 20px;
   padding-right: 10px;
+} */
+.wide > .sIcon {
+  display: none;
 }
 .inp {
   border: none;
@@ -58,6 +62,7 @@
   font-size: 15px;
   font-weight: 500;
   outline: none;
+  padding-left: 10px;
 }
 
 .inp:focus ~ .inputBar {
@@ -78,4 +83,11 @@
   width: 100%;
   transition: 0.4s;
   left: 0;
+}
+
+@media (max-width: 600px) {
+  .wide {
+    max-width: 400px;
+    margin: 0;
+  }
 }

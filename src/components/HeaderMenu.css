@@ -17,13 +17,20 @@
   border-bottom: none;
 }
 
+@media (max-width: 1055px) {
+  #last {
+    display: none;
+  }
+}
+
 .left:hover {
   color: white;
-
   border-bottom: 2px solid white;
 }
+
 .menu-links {
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .hide {
@@ -39,4 +46,15 @@
   box-shadow: 24px 0 0 0 #f8ce52, 48px 0 0 0 #5fcf65;
   margin-right: 195px;
   flex-shrink: 0;
+}
+@media (max-width: 945px) {
+  .menu-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  .menu-links {
+    display: none;
+  }
 }

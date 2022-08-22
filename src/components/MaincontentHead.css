@@ -29,7 +29,6 @@
 }
 
 .main-context {
-  display: block;
   max-width: 450px;
 }
 
@@ -52,6 +51,11 @@
   -o-object-position: center;
   object-position: center;
 }
+@media (max-width: 570px) {
+  .content-wrapper-img {
+    width: 110px;
+  }
+}
 
 .btn {
   background: #3a6df0;
@@ -69,4 +73,10 @@
   background: #225df3;
 
   text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .content-wrapper-img {
+    display: none;
+  }
 }

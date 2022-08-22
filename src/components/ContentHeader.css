@@ -3,22 +3,26 @@
   align-items: center;
   height: 58px;
   border-bottom: 1px solid rgba(113 119 144 / 25%);
+  flex-shrink: 0;
 }
 
 .menu-link {
-  display: flex;
   font-family: poppins, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
   color: #f9fafb;
   text-decoration: none;
   padding: 0 30px;
   cursor: pointer;
 }
 
+@media (max-width: 1055px) {
+  .menu-link {
+    display: none;
+  }
+}
+
 .link-holder {
   display: flex;
-  margin: 200px;
+  margin-left: 200px;
 }
 
 .clicked {
@@ -46,4 +50,13 @@
 .other-link:hover {
   color: white;
   border-bottom: 2px solid white;
+}
+
+@media (max-width: 650px) {
+  .main-header {
+    justify-content: center;
+  }
+  .link-holder {
+    margin: 0;
+  }
 }

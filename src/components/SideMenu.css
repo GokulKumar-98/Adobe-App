@@ -1,15 +1,17 @@
 .leftside {
-  display: flex;
-  flex-direction: column;
-  width: 240px;
-  max-height: 860px;
+  flex-basis: 240px;
   padding: 26px;
   border-right: 0.2px solid rgba(113 119 144 / 25%);
   overflow: auto;
+  flex-shrink: 0;
   scrollbar-width: thin;
   scrollbar-color: rgb(1 2 3 / 30%) rgb(1 2 3 / 20%);
 }
-
+@media (max-width: 945px) {
+  .leftside {
+    display: none;
+  }
+}
 ::-webkit-scrollbar {
   width: 6px;
   border-radius: 10px;

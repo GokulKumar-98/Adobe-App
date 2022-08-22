@@ -9,15 +9,13 @@ const Header = () => {
   const [vis, setvis] = useState(0);
 
   return (
-    <div className="head">
-      <div className="header-menu">
-        <div className="menu-circle"></div>
-        <SearchBarFocus.Provider value={{ vis, setvis }}>
-          <HeaderMenu></HeaderMenu>
-          <SearchBar></SearchBar>
-          <Profile></Profile>
-        </SearchBarFocus.Provider>
-      </div>
+    <div className="header-menu">
+      <div className="menu-circle"></div>
+      <SearchBarFocus.Provider value={{ vis, setvis }}>
+        <HeaderMenu></HeaderMenu>
+        <SearchBar></SearchBar>
+        <Profile></Profile>
+      </SearchBarFocus.Provider>
     </div>
   );
 };

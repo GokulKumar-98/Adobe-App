@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import './SearchBar.css';
 import SearchIcon from '@mui/icons-material/Search';
 import { SearchBarFocus } from '../Header.js';
@@ -10,7 +10,6 @@ export default React.memo(function SearchBar() {
 
   const inputClick = () => {
     setvis(1);
-    //console.log(vis);
   };
 
   const clickOut = () => {
@@ -30,5 +29,4 @@ export default React.memo(function SearchBar() {
       <span className="focus-border"></span>
     </div>
   );
-}
-)
+});

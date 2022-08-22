@@ -10,12 +10,15 @@ function Profile() {
 
   return (
     <div className={!value.vis ? 'pfholder' : 'hide'}>
-      <div className="llc trn">
-        <NotificationsIcon className="not-icon"></NotificationsIcon>
+      <div className="llc">
         <span className="span-num">3</span>
+        <NotificationsIcon
+          sx={{ m: 0 }}
+          className="not-icon"
+        ></NotificationsIcon>
       </div>
-      <CloudIcon className="cld-icon trn"></CloudIcon>
-      <AccountBoxIcon className="acc-icon trn"></AccountBoxIcon>
+      <CloudIcon className="cld-icon"></CloudIcon>
+      <AccountBoxIcon className="acc-icon"></AccountBoxIcon>
     </div>
   );
 }

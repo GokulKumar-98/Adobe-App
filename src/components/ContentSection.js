@@ -9,54 +9,57 @@ import ind from './icons/indesign.png';
 
 function ContentSection() {
   return (
-    <div className="content-div">
-      <div className="content-title">Installed</div>
-      <div className="box-holder">
-        <Sectionbox
-          value={{ icon: <img src={ps} />, name: 'Photoshop', update: true }}
-        ></Sectionbox>
-        <Sectionbox
-          value={{
-            icon: <img src={ils} />,
-            name: 'Illustrator',
-            update: false,
-          }}
-        ></Sectionbox>
-        <Sectionbox
-          value={{
-            icon: <img src={ae} />,
-            name: 'After Effects',
-            update: true,
-          }}
-        ></Sectionbox>
+    <>
+      <div className="content-div">
+        <div className="content-title">Installed</div>
+        <div className="box-holder">
+          <Sectionbox
+            value={{ icon: <img src={ps} />, name: 'Photoshop', update: true }}
+          ></Sectionbox>
+          <Sectionbox
+            value={{
+              icon: <img src={ils} />,
+              name: 'Illustrator',
+              update: false,
+            }}
+          ></Sectionbox>
+          <Sectionbox
+            value={{
+              icon: <img src={ae} />,
+              name: 'After Effects',
+              update: true,
+            }}
+          ></Sectionbox>
+        </div>
       </div>
-      <div className="title-wrap">
+      <div className="content-div">
         <div className="content-title">Apps In Your Plan</div>
+
+        <div className="card-wrap">
+          <Sectioncard
+            value={{
+              icon: <img src={pr} />,
+              name: 'Premiere Pro',
+              text: 'Edit, master and create fully proffesional videos',
+            }}
+          />
+          <Sectioncard
+            value={{
+              icon: <img src={ind} />,
+              name: 'InDesign',
+              text: 'Design and publish great projects & mockups',
+            }}
+          />
+          <Sectioncard
+            value={{
+              icon: <img src={ae} />,
+              name: 'After Efects',
+              text: 'Industry Standart motion graphics & visual effects',
+            }}
+          />
+        </div>
       </div>
-      <div className="card-wrap">
-        <Sectioncard
-          value={{
-            icon: <img src={pr} />,
-            name: 'Premiere Pro',
-            text: 'Edit, master and create fully proffesional videos',
-          }}
-        />
-        <Sectioncard
-          value={{
-            icon: <img src={ind} />,
-            name: 'InDesign',
-            text: 'Design and publish great projects & mockups',
-          }}
-        />
-        <Sectioncard
-          value={{
-            icon: <img src={ae} />,
-            name: 'After Efects',
-            text: 'Industry Standart motion graphics & visual effects',
-          }}
-        />
-      </div>
-    </div>
+    </>
   );
 }
 
@@ -67,15 +70,15 @@ const Sectionbox = ({ value }) => {
         {value.icon}
         {value.name}
       </div>
-      <div className="updates">
-        <div
+      <span className="updates">
+        <span
           className={value.update ? 'dot circle-green' : 'dot circle-blue'}
-        ></div>
+        ></span>
         {value.update ? 'Updated' : 'Update Available'}
-      </div>
+      </span>
       <div className="content-button">
         <button className={value.update ? 'btn-cnt' : 'btn-cnt active'}>
-          {value.update ? 'Open' : 'Update this app'}
+          {value.update ? 'Open' : 'Update App'}
         </button>
         <MoreHorizIcon sx={{ color: 'white' }}></MoreHorizIcon>
       </div>

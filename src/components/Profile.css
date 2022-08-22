@@ -1,29 +1,42 @@
 .pfholder {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 0 16px 0 40px;
+  flex-shrink: 0;
 }
 
+.pfholder > svg {
+  width: 22px;
+  color: #f9fafb;
+  flex-shrink: 0;
+  margin-left: 22px;
+}
+/* 
 .trn:hover {
   transform: scale(1.05);
-}
+} */
 
 .hide {
   display: none;
 }
 
 .not-icon {
-  margin-left: 30px;
   cursor: pointer;
 }
 .cld-icon,
 .acc-icon {
-  margin-left: 30%;
+  width: 22px;
+  color: #f9fafb;
+  flex-shrink: 0;
   cursor: pointer;
 }
 
 .llc {
   position: relative;
+}
+
+.llc > svg {
+  color: #f9fafb;
 }
 .span-num {
   position: absolute;
@@ -45,4 +58,14 @@
 .span-num:hover {
   background-color: #1d5bf8;
   cursor: pointer;
+}
+
+.cld-icon {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .pfholder {
+    display: none;
+  }
 }

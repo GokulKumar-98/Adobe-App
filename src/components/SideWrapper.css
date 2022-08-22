@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.title {
+  font-size: 15px;
+  font-family: poppins;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: rgb(148, 145, 145);
+  cursor: default;
+}
+.logo {
+  padding-right: 10px;
+}
+
+.title-wrap > a {
+  display: flex;
+  font-family: poppins;
+  color: white;
+  align-items: center;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.title-wrap > a:hover {
+  background-color: rgb(1 2 3 / 40%);
+}
+.title-wrap {
+  margin-bottom: 20px;
+}

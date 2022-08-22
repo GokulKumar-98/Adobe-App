@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 25%;
+  }
+  100% {
+    background-position: 0% 25%;
+  }
+}
+.MainBox {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  backdrop-filter: blur(20px);
+}
+
+.wrapper {
+  display: flex;
+  width: inherit;
+  height: 860px;
+  border-top: 0.5px solid rgba(113 119 144 / 25%);
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.main-content {
+  display: block;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 40px;
+}
+
+.video-bg {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  filter: blur(5px);
+}
+.video-bg > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  filter: blur(5px);
+}

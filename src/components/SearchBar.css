@@ -1,0 +1,81 @@
+.inputBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  transition: ease-in;
+  height: 75%;
+  border: none;
+  margin: 6px 10px;
+  background-color: #14162b;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 300px;
+  box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+  color: white;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 16px 48%;
+}
+
+.wide {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  height: 75%;
+  border: none;
+  margin: 6px 150px;
+  background-color: #14162b;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  width: 500px;
+
+  box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+  color: white;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 16px 48%;
+  -webkit-transition: width 0.3s 0s ease-in-out;
+  -moz-transition: width 0.3s 0s ease-in-out;
+  -o-transition: width 0.3s 0s ease-in-out;
+  transition: width 0.3s 0s ease-in-out;
+}
+.sIcon {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.inp {
+  border: none;
+  height: inherit;
+  width: 100%;
+  border-radius: inherit;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+}
+
+.inp:focus ~ .inputBar {
+  width: 500px;
+}
+
+.inp ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.inp:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}

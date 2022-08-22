@@ -1,0 +1,49 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  border-bottom: 1px solid rgba(113 119 144 / 25%);
+}
+
+.menu-link {
+  display: flex;
+  font-family: poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #f9fafb;
+  text-decoration: none;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.link-holder {
+  display: flex;
+  margin: 200px;
+}
+
+.clicked {
+  font-family: poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  text-decoration: none;
+  padding: 17px 30px;
+  cursor: pointer;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.other-link {
+  font-family: poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(99, 96, 96);
+  text-decoration: none;
+  padding: 17px 30px;
+  cursor: pointer;
+}
+
+.other-link:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}

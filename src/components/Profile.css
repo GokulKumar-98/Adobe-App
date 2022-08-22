@@ -1,0 +1,48 @@
+.pfholder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trn:hover {
+  transform: scale(1.05);
+}
+
+.hide {
+  display: none;
+}
+
+.not-icon {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.cld-icon,
+.acc-icon {
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+.llc {
+  position: relative;
+}
+.span-num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #3a6df0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.span-num:hover {
+  background-color: #1d5bf8;
+  cursor: pointer;
+}

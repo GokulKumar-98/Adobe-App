@@ -1,0 +1,72 @@
+.content-header {
+  display: flex;
+  font-family: Poppins;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-image: url(https://www.transparenttextures.com/patterns/cubes.png),
+    linear-gradient(
+      to right top,
+      #cf4af3,
+      #e73bd7,
+      #f631bc,
+      #fd31a2,
+      #ff3a8b,
+      #ff4b78,
+      #ff5e68,
+      #ff705c,
+      #ff8c51,
+      #ffaa49,
+      #ffc848,
+      #ffe652
+    );
+  border-radius: 14px;
+}
+
+.img-st {
+  width: 186px;
+  object-fit: cover;
+}
+
+.main-context {
+  display: block;
+  max-width: 450px;
+}
+
+.context-text {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.content-wrapper-img {
+  width: 186px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-top: -25px;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.btn {
+  background: #3a6df0;
+  border: none;
+  border-radius: 28px;
+  font-family: poppins;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #225df3;
+
+  text-decoration: none;
+}
